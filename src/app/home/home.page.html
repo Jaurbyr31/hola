@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-item id="header" class="centered-containers">
+      <h3> Iumaco </h3>
+      <div id="logo"><img src="./assets/icon/logito.ico" alt="img logo"></div>
+      <ion-title>Home Instructor</ion-title>
+      
+      <div id="cerrarSesion" class="custom-button" slot="end">
+        <ion-button (click)="confirmarSalida()">Cerrar sesión</ion-button>
+      </div>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="centered-container">
+  <div id="rutasFormularios">
+    <div id="rutas" expand="full">
+      <button id="felicitarAprendiz" expand="full" (click)="felicitarAprendiz()">Felicitar aprendiz</button>
+      <button id="llamadoAtencion" expand="full" (click)="llamadoAtencion()">Llamado de atención</button>
+      <button id="citacionComite" expand="full" (click)="citacionComite()">Citación a Comité</button>
+    </div>
+  </div>
+</ion-content>
